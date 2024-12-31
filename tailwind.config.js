@@ -2,7 +2,11 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./src/global.css"],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				inter: ["Inter", "sans-serif"]
+			}
+		}
 	},
 	plugins: []
 };
