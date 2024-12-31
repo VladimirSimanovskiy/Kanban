@@ -83,6 +83,9 @@
 }
 
 @layer base {
+	* {
+		@apply font-inter;
+	}
 	body {
 		@apply text-base;
 	}
