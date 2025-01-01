@@ -80,6 +80,58 @@
 		--status-error-bg-hover: 0 93% 94%;
 		--status-error-border: 0 96% 89%;
 	}
+
+	.dark {
+		--background: 0 0% 3.9%;
+		--foreground: 0 0% 98%;
+		--card: 0 0% 3.9%;
+		--card-foreground: 0 0% 98%;
+		--popover: 0 0% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 210 2% 99%;
+		--primary-foreground: 0 0% 9%;
+		--secondary: 0 0% 14.9%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 215 20% 65%;
+		--muted-foreground: 0 0% 63.9%;
+		--accent: 210 40% 98%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 0 0% 14.9%;
+		--input: 0 0% 14.9%;
+		--ring: 0 0% 83.1%;
+		--chart-1: 220 70% 50%;
+		--chart-2: 160 60% 45%;
+		--chart-3: 30 80% 55%;
+		--chart-4: 280 65% 60%;
+		--chart-5: 340 75% 55%;
+
+		/** Base **/
+		--primary-fg: 210 40% 98%;
+		--primary-border: 215 25% 27%;
+		--primary-hover: 214 6% 94%;
+		--primary-bg: 222 47% 11%;
+		--primary-bg-hover: 215 25% 27%;
+		--secondary-fg: 214 32% 91%;
+		--secondary-border: 217 33% 17%;
+		--secondary-bg: 229 84% 5%;
+		--secondary-bg-hover: 217 33% 17%;
+
+		/** Status **/
+		--status-info-bg: var(--secondary-bg-hover);
+		--status-info-bg-hover: var(--primary-bg-hover);
+		--status-info-border: 202 80% 24%;
+		--status-success-bg: var(--secondary-bg-hover);
+		--status-success-bg-hover: var(--primary-bg-hover);
+		--status-success-border: 88 61% 20%;
+		--status-warning-bg: var(--secondary-bg-hover);
+		--status-warning-bg-hover: var(--primary-bg-hover);
+		--status-warning-border: 28 73% 26%;
+		--status-error-bg: var(--secondary-bg-hover);
+		--status-error-bg-hover: var(--primary-bg-hover);
+		--status-error-border: 0 63% 31%;
+	}
 }
 
 @layer base {
@@ -87,6 +139,6 @@
 		@apply font-inter;
 	}
 	body {
-		@apply text-base;
+		@apply bg-background text-sm;
 	}
 }
