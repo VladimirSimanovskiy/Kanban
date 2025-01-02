@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
+import { AvatarUrl } from "../../../services/UserManager/UserManager";
 
 const avatarVariants = tv({
-	base: "flex justify-center items-center rounded-full object-cover border-[1px] border-solid border-primary",
+	base: "flex items-center justify-center rounded-full border-[1px] border-solid border-primary object-cover",
 	variants: {
 		size: {
 			sm: "h-8 w-8",
@@ -16,19 +17,13 @@ const avatarVariants = tv({
 	}
 });
 
-type AvatarUrl = string
-
 type AvatarProps = VariantProps<typeof avatarVariants> & {
-	src: AvatarUrl
+	src: AvatarUrl;
 	className?: string;
 };
 
-const Avatar: FC<AvatarProps> = ({
-	className,
-	src,
-	size
-}) => {
-	return 	<img className={twMerge(avatarVariants({size}), className)} src={src}/>
+const Avatar: FC<AvatarProps> = ({ className, src, size }) => {
+	return <img className={twMerge(avatarVariants({ size }), className)} src={src} />;
 };
 
 export default Avatar;

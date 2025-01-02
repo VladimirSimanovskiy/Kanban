@@ -3,7 +3,7 @@ import { tv, VariantProps } from "tailwind-variants";
 import { twMerge } from "tailwind-merge";
 
 const badgeVariants = tv({
-	base: "inline-flex justify-center items-center gap-2 py-2 px-4 rounded-md text-white",
+	base: "inline-flex justify-center items-center gap-2 py-1 px-2 rounded-md text-white text-xs w-fit",
 	variants: {
 		status: {
 			default: "bg-primary text-primary-bg",
@@ -12,6 +12,9 @@ const badgeVariants = tv({
 			warning: "bg-status-warning",
 			error: "bg-status-error",
 		}
+	},
+	defaultVariants: {
+		status: "default"
 	}
 });
 
