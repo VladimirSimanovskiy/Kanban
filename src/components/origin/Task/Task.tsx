@@ -7,7 +7,7 @@ import { format } from "date-fns";
 
 const taskVariants = tv({
 	slots: {
-		wrapper: "flex w-64 flex-col gap-1 rounded-md border border-solid border-primary bg-primary-bg p-3",
+		wrapper: "flex w-64 flex-col gap-1 rounded-md border border-solid border-primary bg-secondary-bg p-3",
 		title: "text-base font-bold text-primary",
 		description: "text-xs text-primary/60",
 		bottomZone: "flex items-center justify-start gap-2",
@@ -16,6 +16,7 @@ const taskVariants = tv({
 });
 
 export type TaskProps = {
+	id: number;
 	title: string;
 	description?: string;
 	priority: TaskPriority;

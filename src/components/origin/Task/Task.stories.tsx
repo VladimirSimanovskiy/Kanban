@@ -25,7 +25,7 @@ export const Default: Story = {
 		priority: "normal",
 		dueDate: new Date(),
 		assignee: {
-			id: "1",
+			id: 1,
 			name: "Name",
 			email: "Email",
 			avatar: "https://api.zapovednik96.ru/upload/iblock/f0e/shutterstock_2478142185.jpg"
